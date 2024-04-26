@@ -1,0 +1,19 @@
+{
+  "name": "hardhat-javascript-starter",
+  "scripts": {
+    "build": "npx thirdweb@latest detect",
+    "deploy": "npx thirdweb@latest deploy --key $THIRDWEB_PK",
+    "deploylocal": "npx thirdweb@latest deploy",
+    "release": "npx thirdweb@latest release",
+    "postinstall": "patch-package"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.20.1",
+    "patch-package": "^8.0.0"
+  },
+  "dependencies": {
+    "@thirdweb-dev/contracts": "^3.11.0",
+    "@openzeppelin/contracts": "^5.0.1"
+  }
+}

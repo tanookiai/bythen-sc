@@ -1,0 +1,13 @@
+diff --git a/node_modules/@thirdweb-dev/contracts/eip/ERC721A.sol b/node_modules/@thirdweb-dev/contracts/eip/ERC721A.sol
+index 9ae9c99..d7fae41 100644
+--- a/node_modules/@thirdweb-dev/contracts/eip/ERC721A.sol
++++ b/node_modules/@thirdweb-dev/contracts/eip/ERC721A.sol
+@@ -207,7 +207,7 @@ contract ERC721A is Context, ERC165, IERC721A {
+     /**
+      * @dev See {IERC721-approve}.
+      */
+-    function approve(address to, uint256 tokenId) public override {
++    function approve(address to, uint256 tokenId) public virtual override {
+         address owner = ERC721A.ownerOf(tokenId);
+         if (to == owner) revert ApprovalToCurrentOwner();
+ 
